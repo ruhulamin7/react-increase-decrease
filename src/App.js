@@ -2,6 +2,17 @@ import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react/cjs/react.development';
 
+
+
+const btnStyle = {
+  padding: '10px 20px',
+  backgroundColor: 'tomato',
+  color: '#fff',
+  outline: '0',
+  border: 'none',
+  margin: '10px'
+}
+
 function App() {
   return (
     <div className="App">
@@ -22,8 +33,8 @@ function Counter() {
   return (
     <div>
       <h1>Count: {count}</h1>
-      <button onClick={increaseHandler}>Increase</button>
-      <button onClick={deccreasetHandler}>Decrease</button>
+      <button style={btnStyle} onClick={increaseHandler}>Increase</button>
+      <button style={btnStyle} onClick={deccreasetHandler}>Decrease</button>
     </div>
   )
 }
